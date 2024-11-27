@@ -21,31 +21,5 @@ a{
     font-size: 70px;
     border: 2px solid white;
     border-radius: 70px;
-    padding: 10px;
-}
-
-nav{
-    display: flex;
-    justify-content: flex-end;
-    background-color: #FFD700;
-}
-a{
-    padding: 20px;
-    font-size: 30px;
-    color: purple;
-}
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
-    flex-direction: column;
-}
-.ab{
-    color:#FF00FF;
-    background-color: white;
-    font-size: 70px;
-    border: 2px solid white;
-    border-radius: 70px;
     padding: 50px;
 }
