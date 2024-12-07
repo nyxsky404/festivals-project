@@ -1,12 +1,16 @@
 nav{
     display: flex;
     justify-content: flex-end;
-    background-color: #FFD700;
+    background-color: #008080;
 }
-a{
+nav a{
     padding: 20px;
     font-size: 30px;
-    color: purple;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    font-family:'Times New Roman', Times, serif
 }
 .home {
     display: flex;
@@ -15,11 +19,108 @@ a{
     height: 800px;
     flex-direction: column;
 }
-.ab{
-    color:#FF00FF;
-    background-color: white;
+#main-text + h1{
+    color: black;
+    font-size: 40px;
+    background-color: #FFD700;
+    padding: 20px;
+    font-weight: 300;
+    width: 280px;
+    height: 40px;
+    transition:all 0.8s;
+}
+#main-text {
+    color: #FF7F50;
+    padding: 20px;
+    font-size: 60px;
+    font-weight: 300;
+    transition: all 0.8s;
+    text-shadow: 3px 3px 8px violet;
+    transform: translateY(0px);
+}
+#main-text + h1:hover {
+    background-color: crimson;
+    font-size: 50px;
+    width: 350px;
+    height: 60px;
+    border-radius: 50px;
+    color: whitesmoke;
+}
+#main-text:hover {
     font-size: 70px;
-    border: 2px solid white;
-    border-radius: 70px;
-    padding: 50px;
+    color: #FFD700;
+    text-shadow: 3px 3px 6px Crimson;
+    transform: translateY(-20px);
+}
+.second-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Festivals p {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(255, 131, 156);
+    margin: 0;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 30px;
+    margin: 10px;
+    border: 2px solid rgb(0, 208, 208);
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.Festivals img {
+    transition: all 0.8s;
+    width: 95%;
+    height: 95%;
+    display: block;
+    border-radius: 10%;
+    object-fit: cover;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {border: 10px solid lightcoral; box-shadow: 5px 5px 10px lightcoral;}
+    25%  {border: 10px solid lightskyblue; box-shadow: 5px 5px 10px lightskyblue;}
+    50%  {border: 10px solid lightsalmon; box-shadow: 5px 5px 10px lightsalmon;}
+    100% {border: 10px solid lightgreen; box-shadow: 5px 5px 10px lightgreen;}
+  }
+.Festivals:hover {
+    height: 440px;
+    width: 440px;
+    transform: translateY(40px);
+    font-size: 40px;
+}
+.Festivals{
+    width: 380px;
+    height: 380px;
+    margin-top: 80px;
+    position: relative;
+    transition: all 0.8s;
+}
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 10%;
+}
+.content:hover {
+    opacity: 1;
+    border-radius: 10%;
+}
+p {
+    font-family: beautiful;
 }
