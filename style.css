@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
 nav{
     display: flex;
     justify-content: flex-end;
@@ -10,7 +13,7 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     text-shadow: 5px 5px 10px black;
-    font-family:'Times New Roman', Times, serif
+    font-family: "Jaro", sans-serif;
 }
 .home {
     display: flex;
@@ -68,9 +71,7 @@ nav a{
     border-radius: 30px;
     margin: 10px;
     border: 2px solid rgb(0, 208, 208);
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    transition: all 0.8s;
 }
 .Festivals img {
     transition: all 0.8s;
@@ -80,7 +81,7 @@ nav a{
     border-radius: 10%;
     object-fit: cover;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 @keyframes example {
@@ -95,6 +96,9 @@ nav a{
     transform: translateY(40px);
     font-size: 40px;
 }
+.Festivals:hover p {
+    background-color: #ffcc00;
+}  
 .Festivals{
     width: 380px;
     height: 380px;
@@ -120,7 +124,4 @@ nav a{
 .content:hover {
     opacity: 1;
     border-radius: 10%;
-}
-p {
-    font-family: beautiful;
 }
