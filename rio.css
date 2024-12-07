@@ -34,11 +34,11 @@ html{
   scroll-behavior: smooth;
 }
 .heading a:hover{
-  background-color:black;
-  color:lightskyblue;
-  box-shadow: 10px 10px 5px lightskyblue ;
-  border:1px solid whitesmoke;
-  text-shadow: 2px 2px rebeccapurple;
+  background-color:white;
+  color:#ff5722;
+  box-shadow: 10px 5px 10px #ff5722;
+  border: 2px solid black;
+  text-shadow: 2px 2px gray;
 }
 h2{
   font-size: 30px;
@@ -59,6 +59,7 @@ h2{
 }
 .Rio p{
   font-style: italic;
+  font-weight: 200;
 }
 #second_image{
   display: flex;
@@ -103,21 +104,16 @@ h2{
 .card:hover{
 width: 300px;
 box-shadow: 10px 10px 5px black;
-
-
 }
-.highlights h2{
-  text-align: center;
+.calendar h2{
   background-color: lightskyblue;
-  width: 400px;
+  width: auto;
   border-radius: 20px;
-  box-shadow:0px 10px 5px black
-}
-.calendar{
-  background-color: lightskyblue;
-  width: 280px;
-  border-radius: 20px;
-  box-shadow:0px 10px 5px black
+  box-shadow:0px 10px 5px black;
+  display: flex;
+  justify-self: center;
+  margin: 30px;
+  padding: 10px;
 }
 .event{
   display: flex;
@@ -128,11 +124,11 @@ box-shadow: 10px 10px 5px black;
   margin: 10px;
   border-radius: 15px;
   height: 400px;
-  width: 900px;
+  width: 600px;
   transition: all 1s;
 }
 .event img:hover{
-  width: 950px;
+  width: 750px;
   height: 450px;
   box-shadow: 10px 10px 5px rgb(234, 60, 170);
   border: 5px solid black;
