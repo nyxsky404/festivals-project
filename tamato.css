@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+body{
+    background: url("./photos/tamato.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+}
+html{
+    scroll-behavior: smooth;}
+nav a{
+    padding: 20px;
+    font-size: 30px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    font-family: "Jaro", sans-serif;
+}
+.top_image{
+    width: 100%;
+    height: 700px;
+  }
+.top_image img{
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      border:1px solid black;
+      border-radius: 10px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff6347;
+    text-align: center;
+}
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.image-wrapper img{
+    width:1000px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid #ff6347;
+    box-shadow: 10px 10px 10px black;
+    transition: all 0.8s;
+}
+.image-wrapper img:hover{
+    width:1100px;
+    height: 600px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px #ff6347;
+}
+.text-wrapper p{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.section-header h2{
+    font-size: 60px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: 1000;
+    background-color: cornsilk;
+    border-radius: 10px;
+}
+.container{
+    background-color:bisque;
+}
+.text-wrapper{
+    background-color: cornsilk;
+    border-radius: 10px;
+}
+.text-wrapper p{
+    font-style: italic;
+    font-weight: 200;
+}
+.text-wrapper h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 1000;
+    font-family: "Jaro", sans-serif;
+    color: #ff6347;
+}
+.traditions h2{
+    font-size: 60px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: 1000;
+    background-color: cornsilk;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: #ff6347;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+.tradition-box h3{
+    background-color:cornsilk;
+    width: auto;
+    font-size: 40px;
+    border-radius: 20px;
+    font-family:'Comic Sans MS', cursive;
+    color:red;
+
+}
+.tradition-box p{
+    font-size: 30px;
+    font-weight: 1000;
+    color:black;
+}
+.traditions {
+    padding: 50px 20px;
+    text-align: center;
+    color:black;
+}
+.tradition-box {
+    padding: 20px;
+    margin: 0;
+    border: 3px solid red;
+}
+.tradition-box img {
+    width: 900px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px black;
+}
+.tradition-grid{
+    background: url("https://png.pngtree.com/png-clipart/20230928/original/pngtree-banner-of-la-tomatina-festival-spains-epic-battle-of-tomatoes-vector-png-image_12902842.png");
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 5px;
+}
+.facts {
+    padding: 50px 20px;
+    color: #333;
+    text-align: center;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fact-box {
+    background: url("https://img.freepik.com/free-photo/beautiful-smoke-color-textures_23-2149175920.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    transition: all 0.8s;
+}
+html{
+    scroll-behavior: smooth;}
+
+.fact-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.fact-box h3 {
+    margin-top: 15px;
+    color:black;
+    text-shadow:2px 2px 15px whitesmoke ;
+    font-size: 30px;
+}
+.facts h2{
+    background-color: cornsilk;
+    display: flex;
+    justify-self: center;
+    width: auto;
+    color:red;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-weight: 1000;
+    text-shadow:2px 2px 20px #ff6347;
+    font-family:'Comic Sans MS', cursive;
+    box-shadow: 10px 10px 10px black;
+    
+}
+.fact-box p{
+    font-weight: 1000;
+    font-family: initial;
+    font-size: 20px;
+    color: black;
+}
+.fact-box:hover{
+    width: 320px;
+    height: 420px;
+    border: 1px solid black;
+    box-shadow:10px 10px 5px black ;
+}
+video{
+    display: flex;
+    justify-self: center;
+    background-color: cornsilk;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px black;
+}
+.video h1{
+    background-color: cornsilk;
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    border:2px solid #333
+}
+.video h2{
+    text-align: center;
+    background-color:bisque;
+    color: #ff6347;
+    font-size: 30px;
+    font-family:'Comic Sans MS', cursive ;
+    border-radius: 20px;
+}
