@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+body{
+    height: 100%;
+    margin: 0;
+    background: url("./photos/image\ \(2\).png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:white;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+}
+nav a{
+    padding: 20px;
+    font-size: 30px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    font-family: "Jaro", sans-serif;
+}
+.top_image{
+    width: 100%;
+    height: 700px;
+  }
+.top_image img{
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      border:1px solid black;}
+.gallery-box{
+    display: flex;
+    justify-content:space-evenly;
+}
+.gallery-item{
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+}
+.gallery-item img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px yellow;
+    transition: all 0.8s;
+}
+.gallery-item p{
+    background-color:#FFD700;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.gallery-item img:hover{
+    border: 1px solid black;
+    width: 340px;
+    height: 440px;
+    box-shadow: 10px 10px 10px white;
+}
+.gallery{    
+    padding: 50px 20px;
+    text-align: center;
+}
+.gallery h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 60px;
+    text-shadow:2px 2px 15px whitesmoke;
+    background-color:#FFD700;
+    border-radius: 20px;
+    font-family:"Jaro", sans-serif  ;
+}
+#About{
+    font-size: 2em;
+    color: black;
+    margin-bottom: 25px;
+    font-size: 60px;
+    text-shadow:2px 2px 15px whitesmoke;
+    background-color:#FFD700;
+    border-radius: 20px;
+    text-align: center;
+    font-family:"Jaro", sans-serif ;
+}
+#second_image{
+    display: flex;
+    justify-content: space-between;
+}
+.Rio{
+    font-size: 2em;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color:#FFD700;
+    border-radius: 20px;
+    font-family:"Jaro", sans-serif ;
+    width: 900px;
+    margin-left: 30px;
+    height: 800px;
+    border:2px solid black;
+    background: url("https://www.color-meanings.com/wp-content/uploads/Orange-paint-brush-strokes-1024x683.jpeg");
+    background-size: cover;
+}
+.Rio p{
+    font-style: italic;
+    font-weight: 200;
+}
+.Rio h3{
+    text-align: center;
+    background-color: #b31b1b;
+    text-shadow:2px 2px 15px yellow ;
+    border-radius: 10px;
+}
+#second_image{
+    display: flex;
+    justify-content: space-between;
+  }
+  .image-1 {
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid black;
+    box-shadow:0px 8px 20px black ;
+    margin-right: 50px;
+    height: 700px;
+    margin-top: 55px;
+  }
+  .big-image{
+    margin-top: 15px;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border:1px solid black;
+}
+.traditions h2{
+    font-size: 2em;
+    color: black;
+    margin-bottom: 25px;
+    font-size: 60px;
+    text-shadow:2px 2px 15px whitesmoke;
+    background-color:#FFD700;
+    border-radius: 20px;
+    text-align: center;
+    font-family:"Jaro", sans-serif ;
+}
+.tradition-box h3{
+    background-color: #FFD700;
+    display: flex;
+    justify-self: center;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    text-shadow:2px 2px 15px white ;
+}
+.tradition-box p{
+    font-size: 30px;
+    font-weight: 1000;
+    color:white;
+}
+.traditions {
+    padding: 50px 20px;
+    text-align: center;
+    color:black;
+}
+.tradition-box {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0;
+    
+}
+.tradition-box img {
+    width: 900px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.tradition-grid{
+    background: url("https://4kwallpapers.com/images/wallpapers/chinese-new-year-2880x1800-15722.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50px;
+}
+.facts {
+    padding: 50px 20px;
+    color: #333;
+    text-align: center;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fact-box {
+    background: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    transition: all 0.8s;
+}
+
+.fact-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.fact-box h3 {
+    margin-top: 15px;
+    color: black;
+    text-shadow:2px 2px 15px whitesmoke ;
+    font-size: 30px;
+}
+.facts h2{
+    background-color: #FFD700;
+    display: flex;
+    justify-self: center;
+    width: auto;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    font-weight: 1000;
+    text-shadow:2px 2px 15px whitesmoke ;
+    font-family: "Jaro", sans-serif;
+}
+.fact-box p{
+    font-weight: 1000;
+    font-family: initial;
+    font-size: 20px;
+    color: black;
+}
+.fact-box:hover{
+    width: 320px;
+    height: 420px;
+    border: 1px solid black;
+    box-shadow:0px 8px 20px black ;
+    
+}
+html{
+    scroll-behavior: smooth;}
