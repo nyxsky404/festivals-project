@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Fredericka+the+Great&family=Jaro:opsz@6..72&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Metal+Mania&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+.main-page {
+    background: url(./image\ \(1\).png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background: url(./gion\ masturi\ background.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main-text {
+    color: white;
+    height: auto;
+    width: auto;
+}
+.main-text h1 {
+    font-size: 90px;
+    font-weight:900;
+    margin-top: 320px;
+    margin-left: 50px;
+    transition: all 1s;
+    text-align: center;
+}
+.main-text h2 {
+    opacity: 0;
+    font-size: 90px;
+    font-weight:900;
+    transition: all 1s;
+    font-family: "Rock Salt", serif;
+}
+.main-text:hover h1{
+    opacity: 0;
+}
+.main-text:hover h2{
+    opacity: 1;
+    transform: translate(10px,-240px);
+}
+.text {
+    display: flex;
+    justify-self: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    margin-top: 40px;
+    font-style: italic;
+    color: white;
+    font-family: "Rock Salt", serif;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 70px;
+    text-shadow: 5px 5px 10px rgb(77, 0, 119);
+}
+.About {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    height: auto;
+    width: 950px;
+    padding: 20px;
+}
+.About-div {
+    display: flex;
+    justify-content: space-around;
+}
+.About-div img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: 8px 8px 10px rgb(77, 0, 119);
+    border: 1px solid rgb(77, 0, 119);
+    border-radius: 10px;
+}
+.About h3 {
+    font-size: 35px;
+    color: rgb(255, 153, 0);
+}
+.About p {
+    font-size: 20px;
+    text-shadow: 2px 2px 10px rgb(255, 153, 0);
+}
+.About li {
+    font-size: 20px;
+    text-shadow: 2px 2px 10px rgb(255, 153, 0);
+    margin: 5px;
+}
+.highlights-text{
+    text-align: center;
+    background-color: rgba(165, 9, 248, 0.6);
+    color: white;
+    font-size: 40px;
+    margin-top: 60px;
+}
+.highlights-box img{
+    height: 300px;
+    width: 300px;
+}
+.highlights {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    background: url(./1733778516406.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    width: 95%;
+    justify-self: center;
+    border-radius: 20px;
+}
+.highlights-box {
+    background-color: rgb(77, 0, 119,0.8);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    transition: all 0.8s;
+    height: 420px;
+    width: 300px;
+    box-shadow: 20px 20px 20px black;
+}
+.highlights-box:hover {
+    transform: translate(20px,-20px);
+}
+.food-box img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    transition: all 0.8s;
+    border: 3px solid blanchedalmond;
+}
+.food-box:hover img{
+    height: 450px;
+    width: 340px;
+    transform: translateY(-10px);
+    border: 3px solid blanchedalmond;
+}
+.food-box{
+    position: relative;
+}
+.food {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    background: url(./food_background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    width: 95%;
+    justify-self: center;
+    border-radius: 20px;
+}
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    height: 40%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+    font-family: "Rock Salt", serif;
+    margin-top: 262px;
+}
+.food-box:hover .content{
+    opacity: 1;
+    transform: translateY(-125px);
+}
+.Shopping {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    background: url(./shopping_background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    width: 95%;
+    justify-self: center;
+    border-radius: 20px;
+}
+.Shopping-box img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    transition: all 0.8s;
+    border: 3px solid blanchedalmond;
+}
+.Shopping-box:hover img{
+    height: 450px;
+    width: 340px;
+    transform: translateY(-10px);
+    border: 3px solid blanchedalmond;
+}
+.Shopping-box{
+    position: relative;
+}
+.Shopping-box:hover .content{
+    opacity: 1;
+}

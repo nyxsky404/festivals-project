@@ -1,17 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Fredericka+the+Great&family=Jaro:opsz@6..72&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Metal+Mania&family=Noto+Serif+TC:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     height: 100%;
     margin: 0;
 }
 body {
-    background: url();
+    background: url(./background.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+
+  .dropdown-menu {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 
+  }
+  .dropdown-menu a:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .dropdown {
+    margin-top: 20px;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 80px;
@@ -34,7 +57,7 @@ nav a{
     height: 800px;
     flex-direction: column;
 }
-#main-text + h1{
+#main-text + a{
     color: black;
     font-size: 40px;
     background-color: #FFD700;
@@ -45,6 +68,7 @@ nav a{
     border-radius: 10px;
     color: crimson;
     font-weight: 500;
+    text-decoration: none;
 }
 #main-text {
     color: #FFD700;
@@ -56,7 +80,7 @@ nav a{
     transform: translateY(0px);
     font-family: "Anton SC", sans-serif;
 }
-#main-text + h1:hover {
+#main-text + a:hover {
     background-color: crimson;
     font-size: 50px;
     width: auto;
@@ -98,25 +122,33 @@ nav a{
     display: block;
     border-radius: 10%;
     object-fit: cover;
-    animation-name: example;
+    box-shadow: 10px 10px 10px black;
+    border: 5px solid #FFD700;
+    transition: all 0.8s;
+    /* animation-name: example;
     animation-duration: 8s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
-@keyframes example {
+/* @keyframes example {
     0%   {border: 10px solid lightcoral; box-shadow: 5px 5px 10px lightcoral;}
     25%  {border: 10px solid lightskyblue; box-shadow: 5px 5px 10px lightskyblue;}
     50%  {border: 10px solid lightsalmon; box-shadow: 5px 5px 10px lightsalmon;}
     100% {border: 10px solid lightgreen; box-shadow: 5px 5px 10px lightgreen;}
-  }
+  } */
 .Festivals:hover {
     height: 440px;
     width: 440px;
     transform: translateY(40px);
-    font-size: 40px;
+    font-size: 35px;
 }
 .Festivals:hover p {
     background-color: #ffcc00;
+    padding: 15px;
 }  
+.Festivals:hover img {
+    border: 5px solid crimson;
+    box-shadow: 10px 10px 10px crimson;
+}
 .Festivals{
     width: 380px;
     height: 380px;
@@ -132,13 +164,14 @@ nav a{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 98%;
     top: 0;
     left: 0;
     opacity: 0;
     transition: all 1s;
     border-radius: 10%;
+    font-family: "Rock Salt", serif;
 }
 .content:hover {
     opacity: 1;
@@ -178,7 +211,12 @@ nav a{
 .text p{
     color: green;
     text-align: center;
-    font-size: 25px;
+    justify-self: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px greenyellow;
+    background-color: rgb(154, 205, 50,0.4);
+    padding: 10px;
+    border-radius: 10px;
 }
 .text h1 {
     font-size: 50px;
@@ -190,3 +228,139 @@ nav a{
     padding: 15px;
     border-radius: 20px;
 }
+.Upcoming-events h2{
+    justify-self: center;
+    padding: 15px;
+    font-size: 50px;
+    border-radius: 20px;
+    background-color:rgb(209, 247, 19);
+}
+.events-content img{
+    height: 500px;
+    width: 920px;
+    margin-right: 120px;
+    margin-left: 20px;
+    transition: all 0.8s;
+    object-fit: cover;
+}
+.events-content img:hover {
+    transform: translate(20px,-20px);
+}
+.events-content {
+    display: flex;
+}
+.events-content div{
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    background-color: rgb(255, 235, 205);
+    width: 400px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.events-content div h3 {
+    font-size: 40px;
+    color: crimson;
+    background-color: beige;
+    border: 1px solid black;
+}
+.events-content div li {
+    font-size: 28px;
+    margin: 20px;
+}
+.Upcoming-events h1 {
+    font-size: 40px;
+    text-shadow: 10px 10px 15px greenyellow;
+    margin-left: 20px;
+}
+.Upcoming-events h4 span{
+    color: crimson;
+}
+.Upcoming-events h4 {
+    font-size: 23px;
+    width: 900px;
+    background-color: rgb(255, 235, 205,0.8);
+    margin: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.gallery{
+    background: url(https://blogger.googleusercontent.com/img/a/AVvXsEjJE_XGG34MUGF5EKYtlWs0csHJjK9xAiHMrCb5vVYa_qOPBITtJmvA93M0cVMeT3M0ArgC8zVDVHL9yiUQpWRILX4_BIgDLu7mgeFphXEBd9oppd0PPUmFbhGpZ_dejTfv2smLTu1JlNsrCgpCIGF3wM5eItbVhQOhNAfrEeItl_T-gBERD43O5WvyygI=w1600);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 98%;
+    height: 480px;
+    justify-self: center;
+    border-radius: 20px;
+}
+.gallery h1{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 10px 10px 10px black;
+}
+.first{
+    font-size: 50px;
+    background-color: blanchedalmond;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    justify-self: center;
+    text-decoration: none;
+    box-shadow: 10px 10px 10px black;
+}
+.gallery a{
+    text-decoration: none;
+    color: black;
+}
+.first:hover{
+    background-color: black;
+    color: antiquewhite;
+    box-shadow: 10px 10px 10px whitesmoke;
+    width: 260px;
+}
+.second{
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 10px 10px 15px black;
+    margin-top: 130px;
+    font-weight: 1000;
+
+}
+footer {
+    margin-top: 60px;
+    background-color:black;
+    padding: 30px 20px 20px 20px;
+    color: white;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  .social-media {
+    display: flex;
+    gap: 15px;
+  }
+  .social-media a {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+  .social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

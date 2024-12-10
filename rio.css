@@ -2,6 +2,9 @@
 body{
     height: 100%;
     margin: 0;
+    background: url(./Free\ Vector\ _\ Flat\ brazilian\ carnival\ background_enhanced.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 nav{
   display: flex;
