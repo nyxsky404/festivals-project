@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popular Festivals in the World</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <section id="hero">
-        <img src="images/diwali-102022-3-05a455826c2f4a2b.png" alt="Hero Background" class="bg">
-        <div class="content">
-            <h1 class="glow">Explore Global Celebrations</h1>
-            <p>Step into the vibrant world of festivals and discover traditions that unite cultures.</p>
-            <button class="btn call-btn">Discover More</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="contact.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Gallery</a>
+    <a href="">Festivals</a>
+</nav>
+
+  <div class="container">
+    <div class="heading">
+      <h1>Contact Us</h1>
+      <p>If you have questions, feedback, or inquiries, we're here to help.</p>
+    </div>
+
+    <section class="info">
+        <a href="mailto:hello@example.com">
+            <img src="email.png" alt="email"> hello@example.com</a>
+        <a href="tel:1234567890">
+            <img src="telephone.png" alt="phone"> 1-234-567-890 </a>
     </section>
-<!-- india -->
-    <section id="country1">
-        <h2>India</h2>
-        <div class="container">
-            <div class="card">
-                <img class="img" src="images/diwali-102022-3-05a455826c2f4a2b.png" alt="Diwali">
-                <h3>Diwali</h3>
-                <p>Experience the festival of lights that symbolizes the triumph of light over darkness and brings families together.</p>
-                <button class="btn call-btn">Read More</button>
-            </div>
-            <div class="card">
-                <img class="img" src="images/holi.png" alt="Holi">
-                <h3>Holi</h3>
-                <p>Immerse yourself in a riot of colors, marking the joy of spring and the spirit of togetherness.</p>
-                <button class="btn call-btn">Read More</button>
-            </div>
-            <div class="card">
-                <img class="img" src="images/ganesh_chaturthi.png" alt="Ganesh Chaturthi">
-                <h3>Ganesh Chaturthi</h3>
-                <p>Celebrate the arrival of Lord Ganesha with grandeur, rituals, and mouth-watering delicacies.</p>
-                <button class="btn call-btn">Read More</button>
-            </div>
-            <div class="card">
-                <img class="img" src="images/Durga-Puja.png" alt="Durga Puja">
-                <h3>Durga Puja</h3>
-                <p>Witness the vibrant festivities and cultural performances honoring Goddess Durga.</p>
-                <button class="btn call-btn">Read More</button>
-            </div>
-        </div>
-    </section>
+
+    <div class="form">
+      <form action="#" method="POST">
+        <input type="text" name="first-name" placeholder="First Name*" required>
+        <input type="text" name="last-name" placeholder="Last Name*" required>
+        <input type="email" name="email" placeholder="Your Email Address*" required>
+        <input type="tel" name="phone" placeholder="Phone Number (optional)">
+        <input type="text" name="subject" placeholder="Subject*" required>
+        <textarea name="message" placeholder="Type your message here..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="containers">
+      <div class="copyright">
+        <p>&copy; 2024 Celebrate Culture, Inc</p>
+      </div>
+      <div class="social-media">
+        <a href="https://in.linkedin.com/"><img src="./linkedin.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/"><img src="./instagram.png" alt="Instagram"></a>
+        <a href="https://github.com/ishida-writtes/festivals-project"><img src="./github.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
