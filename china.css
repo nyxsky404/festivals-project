@@ -7,9 +7,32 @@ body{
     background-attachment: fixed;
     background-color:white;
 }
+html {
+    scroll-behavior: smooth;
+}
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 
+  }
+  .dropdown-menu a:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .dropdown {
+    margin-top: 20px;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 80px;
@@ -262,3 +285,34 @@ nav a{
 }
 html{
     scroll-behavior: smooth;}
+    footer {
+        background-color:black;
+        padding: 30px 20px 20px 20px;
+        color: white;
+      }
+      .containers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 20px;
+      }
+      .copyright {
+        display: flex;
+        align-items: center;
+      }
+      .social-media {
+        display: flex;
+        gap: 15px;
+      }
+      .social-media a {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+      .social-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }

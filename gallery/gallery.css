@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+.header h1{
+    font-size: 90px;
+    font-weight: 1000;
+    text-shadow: 10px 10px 15px black;
+    color:azure;
+    transition: all 0.8s;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background: url("https://wallpapers-clan.com/wp-content/uploads/2024/07/blue-sky-puffy-clouds-serenity-desktop-wallpaper-preview.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 
+  }
+  .dropdown-menu a:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .dropdown {
+    margin-top: 20px;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+}
+nav a{
+    padding: 20px;
+    font-size: 30px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    font-family: "Jaro", sans-serif;
+}
+.header p {
+    font-size: 35px;
+    text-align: center;
+    color: azure;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header h1:hover{
+    font-size: 100px;
+}
+.header {
+    text-align: center;
+    padding: 100px 20px; 
+    background: url("https://i.pinimg.com/originals/15/f6/a3/15f6a3aac562ee0fadbbad3d4cdf47bc.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff; 
+    text-shadow: 2px 2px 4px black; 
+    box-shadow: 0 4px 6px black;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery-box{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.gallery-item{
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.gallery-item img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    transition: all 0.8s;
+}
+.gallery-item p{
+    background-color:aliceblue;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px white;
+}
+.gallery-item img:hover{
+    border: 1px solid black;
+    width: 340px;
+    height: 440px;
+    box-shadow: 10px 10px 10px white;
+}
+.gallery{    
+    padding: 50px 20px;
+    text-align: center;
+}
+.gallery h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 60px;
+    text-shadow:10px 10px 10px whitesmoke;
+    background-color:aliceblue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}

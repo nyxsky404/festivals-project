@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+  .header p {
+    font-size: 40px;
+    text-align: center;
+    color: azure;
+    font-weight: 700;
+}
+.header h1:hover{
+    font-size: 120px;
+}
+.header h1{
+    font-size: 100px;
+    transition: all 1.5s;
+}
+.header {
+    text-align: center;
+    padding: 100px 20px; 
+    background: url("https://www.soutickets.in/assets/images/banner_home_img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff; 
+    text-shadow: 2px 2px 4px black; 
+    box-shadow: 0 4px 6px black;
+    height: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://i.pinimg.com/736x/92/a8/44/92a84418577bd7d91bab5de41af8e627.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px ;
+    background-color: rgb(245, 213, 6);
+    border-radius: 10px;
+    font-size: 50px;
+  }
+  .popular-festivals {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .festival-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+.festival-card {
+    background:rgb(245, 213, 6);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    margin: 5px;
+    transition: all 1.5s;
+  }
+  .festival-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.8s;
+  }
+  .festival-card h3 {
+    font-size: 35px;
+    color: black;
+    font-weight: 900;
+    margin: auto;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .festival-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 500px;
+  }
+  .festival-card:hover h3 {
+    color: red;
+  }
+  

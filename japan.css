@@ -9,10 +9,51 @@
     justify-content: center;
     align-items: center;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: url(./gion\ masturi\ background.jpg) center;
     background-attachment: fixed;
     background-size: cover;
+}
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 
+  }
+  .dropdown-menu a:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .dropdown {
+    margin-top: 20px;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+}
+nav a{
+    padding: 20px;
+    font-size: 30px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    font-family: "Jaro", sans-serif;
 }
 .main-text {
     color: white;
@@ -208,3 +249,34 @@ body {
 .Shopping-box:hover .content{
     opacity: 1;
 }
+footer {
+    background-color:black;
+    padding: 30px 20px 20px 20px;
+    color: white;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 28px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
+  .social-media {
+    display: flex;
+    gap: 15px;
+  }
+  .social-media a {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

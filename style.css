@@ -125,16 +125,16 @@ nav a{
     box-shadow: 10px 10px 10px black;
     border: 5px solid #FFD700;
     transition: all 0.8s;
-    /* animation-name: example;
+    animation-name: example;
     animation-duration: 8s;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
-/* @keyframes example {
+@keyframes example {
     0%   {border: 10px solid lightcoral; box-shadow: 5px 5px 10px lightcoral;}
     25%  {border: 10px solid lightskyblue; box-shadow: 5px 5px 10px lightskyblue;}
     50%  {border: 10px solid lightsalmon; box-shadow: 5px 5px 10px lightsalmon;}
     100% {border: 10px solid lightgreen; box-shadow: 5px 5px 10px lightgreen;}
-  } */
+  }
 .Festivals:hover {
     height: 440px;
     width: 440px;
@@ -217,6 +217,7 @@ nav a{
     background-color: rgb(154, 205, 50,0.4);
     padding: 10px;
     border-radius: 10px;
+    margin-top: 80px;
 }
 .text h1 {
     font-size: 50px;

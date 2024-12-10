@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 10px; 
+    color: #333;
+    background-color:bisque; 
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 
+  }
+  .dropdown-menu a:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .dropdown {
+    margin-top: 20px;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+}
+nav a{
+    padding: 20px;
+    font-size: 30px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    font-family: "Jaro", sans-serif;
+}
+.header h1{
+    font-size: 85px;
+    font-weight: 1000;
+    text-shadow: 10px 10px 15px black;
+    color:azure;
+    transition: all 0.8s;
+}
+
+.header p {
+    font-size: 35px;
+    text-align: center;
+    color: azure;
+}
+.header h1:hover{
+    font-size: 100px;
+}
+.header {
+    text-align: center;
+    padding: 100px 20px; 
+    background: url("https://www.budgettourinindia.com/public/tour_images/camel_fair_in_pushkar_rajasthan_tour_1652170634.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff; 
+    text-shadow: 2px 2px 4px black; 
+    box-shadow: 0 4px 6px black;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    padding: 40px 20px;
+}
+
+#about {
+    margin: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+}
+
+#about h2 {
+    font-size: 45px;
+    color: #704214;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc66;
+    padding-bottom: 5px;
+}
+#about p{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#about img{
+    width: 1350px;
+    height:670px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    transition: all 0.8s;
+}
+#about img:hover{
+    height: 700px;
+    width: 1400px;
+    border: 1px solid black;
+}
+.traditions h2{
+    font-size: 45px;
+    color: #704214;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc66;
+    padding-bottom: 5px;
+}
+.tradition-box h3{
+    background-color: #FFD700;
+    display: flex;
+    justify-self: center;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    text-shadow:2px 2px 15px white ;
+}
+.tradition-box p{
+    font-size: 30px;
+    font-weight: 1000;
+    color:black;
+}
+.traditions {
+    margin: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.tradition-box {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0;
+    
+}
+.tradition-box img {
+    width: 900px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.tradition-grid{
+    background: url("./jaipur2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50px;
+}
+.facts {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fact-box {
+    background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2902.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    transition: all 0.8s;
+}
+
+.fact-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.fact-box h3 {
+    margin-top: 15px;
+    color: black;
+    text-shadow:2px 2px 15px whitesmoke ;
+    font-size: 30px;
+}
+.facts h2{
+    font-size: 45px;
+    color: #704214;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc66;
+    padding-bottom: 5px;
+}
+.fact-box p{
+    font-weight: 1000;
+    font-family: initial;
+    font-size: 20px;
+    color: black;
+}
+.fact-box:hover{
+    width: 320px;
+    height: 420px;
+    border: 1px solid black;
+    box-shadow:0px 8px 20px black ;
+    
+}
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+    width: calc(30% - 10px);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgba(8, 8, 8, 0.2);
+    border: 2px solid black;
+}
+#gallery h2{
+    font-size: 45px;
+    color: #704214;
+    margin-bottom: 15px;
+    border: 3px solid #ffcc66;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+}
+#visit{
+    padding: 50px 20px;
+    text-align: center;
+    margin: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#visit h2{
+    font-size: 45px;
+    color: #704214;
+    margin-bottom: 15px;
+    border: 3px solid #ffcc66;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+}
+footer {
+    background-color:black;
+    padding: 30px 20px 20px 20px;
+    color: white;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 28px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
+  .social-media {
+    display: flex;
+    gap: 15px;
+  }
+  .social-media a {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

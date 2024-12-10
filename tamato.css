@@ -3,18 +3,47 @@ body{
     background: url("./photos/tamato.jpg");
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0
 }
+html {
+    scroll-behavior: smooth;
+}
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 
+  }
+  .dropdown-menu a:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .dropdown {
+    margin-top: 20px;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 80px;
     position: fixed;
     z-index: 1000;
 }
-html{
-    scroll-behavior: smooth;}
 nav a{
     padding: 20px;
     font-size: 30px;
@@ -226,6 +255,8 @@ video{
     background-color: cornsilk;
     border: 2px solid black;
     box-shadow: 10px 10px 10px black;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .video h1{
     background-color: cornsilk;
@@ -242,3 +273,34 @@ video{
     font-family:'Comic Sans MS', cursive ;
     border-radius: 20px;
 }
+footer {
+    background-color:black;
+    padding: 30px 20px 20px 20px;
+    color: white;
+  }
+  .containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 20px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
+  .social-media {
+    display: flex;
+    gap: 15px;
+  }
+  .social-media a {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
