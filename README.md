@@ -11,32 +11,6 @@ Welcome to **Globe Fest**, a cultural festival website showcasing diverse festiv
 ## Technologies Used
 - **Frontend**: HTML, CSS
 
-## Getting Started
-To run this project locally:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/festivals-project.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd festivals-project
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm start
-   ```
-5. Open your browser and visit `http://localhost:3000`.
-
-## Contributing
-We welcome contributions from the community! If you would like to contribute:
-- Fork the repository
-- Create a new branch for your feature/bugfix
-- Submit a pull request
-
 ### Contributors
 - **Sumit Kumar** ([Nyxsky404](https://github.com/Nyxsky404))
 - **Anuj Chhajed** ([Anuj-Chhajed](https://github.com/Anuj-Chhajed))
@@ -44,6 +18,6 @@ We welcome contributions from the community! If you would like to contribute:
 
 ## Contact
 For any questions or suggestions, feel free to reach out to us at:
-- GitHub Issues: [https://github.com/yourusername/festivals-project/issues](https://github.com/yourusername/festivals-project/issues)
+- GitHub Issues: [https://github.com/nyxsky404/festivals-project/issues](https://github.com/nyxsky404/festivals-project/issues)
 
 Join us in celebrating the world's diverse cultures and traditions! 🌍🎉
